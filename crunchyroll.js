@@ -4,6 +4,7 @@
 // @author         Nathaniel Charles
 // @include        http://www.crunchyroll.com/home/queue
 // @version        1.0.1
+// @downloadURL    https://raw.githubusercontent.com/oepn/crunchyroll-quick-pop/master/crunchyroll.js
 // ==/UserScript==
 
 (function() {
