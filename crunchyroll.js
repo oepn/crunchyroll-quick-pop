@@ -3,7 +3,7 @@
 // @description    Easy access to popout videos.
 // @author         Nathaniel Charles
 // @include        http://www.crunchyroll.com/home/queue
-// @version        1.0
+// @version        1.0.1
 // ==/UserScript==
 
 (function() {
