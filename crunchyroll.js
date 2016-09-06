@@ -7,16 +7,16 @@
 // ==/UserScript==
 
 (function() {
-	Array.prototype.slice.call(document.getElementById('main_content').querySelectorAll('.queue-item'))
-		.forEach(function(queueItem) {
-			var path = queueItem.querySelector('a.episode').pathname;
-			var popupLink = document.createElement('a');
-			var videoId = path.slice(path.lastIndexOf('-') + 1);
+    Array.prototype.slice.call(document.getElementById('main_content').querySelectorAll('.queue-item'))
+        .forEach(function(queueItem) {
+            var path = queueItem.querySelector('a.episode').pathname;
+            var popupLink = document.createElement('a');
+            var videoId = path.slice(path.lastIndexOf('-') + 1);
 
-			popupLink.href = '/popout?video_format=106&video_encode_quality=61&media_id=' + videoId;
-			popupLink.target = '_blank';
-			popupLink.innerText = ' [+]';
+            popupLink.href = '/popout?video_format=106&video_encode_quality=61&media_id=' + videoId;
+            popupLink.target = '_blank';
+            popupLink.innerText = ' [+]';
 
-			queueItem.querySelector('span.series-title').appendChild(popupLink);
-		});
+            queueItem.querySelector('span.series-title').appendChild(popupLink);
+        });
 })();
